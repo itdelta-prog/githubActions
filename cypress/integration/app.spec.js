@@ -70,9 +70,9 @@ describe('TodoMVC', function () {
       // so as to make our testing intentions as clear as possible.
       //
       // http://on.cypress.io/get
-      cy.get('.todo-list li').should('not.exist')
-      cy.get('[data-layer="Content"]').should('not.exist')
-      cy.get('.footer').should('not.be.visible')
+      cy.get('.todo-list li').should('be.visible')
+      cy.get('[data-layer="Content"]').should('be.visible')
+      cy.get('.footer').should('be.visible')
     })
   })
 
